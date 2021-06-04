@@ -1,0 +1,175 @@
+@font-face {
+	font-family: eng-num;
+	src: url('../assets/ttf/GILROY-BOLD.WOFF.TTF');
+}
+html {
+	font-family: eng-num;
+}
+
+.page {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+}
+.con {
+	flex: 1;
+}
+/* 第一部分 */
+.header {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url('../assets/images/head-background@2x.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.header-inner {
+	height: 60vh;
+	margin-top: 20vh;
+	flex-shrink: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+.header-logo {
+	text-align: center;
+}
+.header-logo .img {
+	width: 50%;
+}
+.header-title {
+	font-weight: bold;
+	font-size: 50px;
+}
+.header-description {
+	font-size: 30px;
+}
+.header-right {
+	position: relative;
+}
+.header-download {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+.download-outside {
+	width: 192px;
+	height: 65px;
+	display: block;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 65px;
+	position: relative;
+}
+.download-outside .hand {
+	position: absolute;
+	top: 40px;
+	left: 130px;
+	width: 30%;
+}
+.download-icon {
+	font-size: 38px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.download-text {
+	font-size: 16px;
+}
+/* 第一部分结束 */
+/* 介绍部分 */
+.introduce {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url('../assets/images/introduce-bg@2x.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.introduce-text {
+
+}
+.introduce-hand {
+	animation: shake-hand ease-in-out alternate 2s infinite;
+	width: 50%;
+	position: absolute;
+	bottom: -30px;
+	right: -20px;
+}
+@keyframes shake-hand {
+	form {
+		bottom: -30px;
+		right: -20px;
+	}
+	to {
+		bottom: 0;
+		right: 0;
+	}
+	/* 0% {
+		bottom: -4px;
+		right: -4px;
+	}
+	25% {
+		bottom: -3px;
+		right: -3px;
+	}
+  50% {
+		bottom: -2px;
+		right: -2px;
+	}
+  100% {
+		bottom: -3px;
+		right: -3px;
+	} */
+}
+
+/* 侧边栏按钮 */
+.hover-button {
+	width: 56px;
+	height: 56px;
+	background: #2AE8B5;
+	text-align: center;
+	position: fixed;
+	top: 60px;
+	right: 180px;
+	cursor: pointer;
+	z-index: 1;
+}
+.hover-button .button {
+	color: #fff;
+	font-size: 26px;
+	line-height: 56px;
+}
+
+/* 侧边栏 */
+.side-bar {
+	flex: 1;
+	width: 390px;
+	background: lightcoral;
+	z-index: 2;
+}
+.side-bar-con {
+	position: fixed;
+	width: 390px;
+	height: 100vh;
+}
+
+/* 宽度小于992 */
+@media screen and (max-width: 992px) {
+
+}
+/* 宽度小于768 */
+@media screen and (max-width: 768px) {
+
+}
+/* 宽度小于480 */
+@media screen and (max-width: 480px) {
+
+}
