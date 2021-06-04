@@ -97,20 +97,18 @@ html {
 
 }
 .introduce-hand {
-	animation: shake-hand ease-in-out alternate 2s infinite;
+	animation: shake-hand ease-in-out alternate 5s infinite;
 	width: 50%;
 	position: absolute;
-	bottom: -30px;
-	right: -20px;
+	bottom: -20px;
+	right: -10px;
 }
 @keyframes shake-hand {
 	form {
-		bottom: -30px;
-		right: -20px;
+		transform:translate(0,0);
 	}
 	to {
-		bottom: 0;
-		right: 0;
+		transform:translate(-10px,-20px);
 	}
 	/* 0% {
 		bottom: -4px;
