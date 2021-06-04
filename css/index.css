@@ -5,6 +5,15 @@
 html {
 	font-family: eng-num;
 }
+.fc {
+	width: 100vw;
+	min-height: 100vh;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
 
 .page {
 	overflow: hidden;
@@ -15,9 +24,8 @@ html {
 	flex: 1;
 }
 /* 第一部分 */
+/* 首屏 */
 .header {
-	width: 100vw;
-	height: 100vh;
 	overflow: hidden;
 	background-image: url('../assets/images/head-background@2x.png');
 	background-repeat:no-repeat;
@@ -82,10 +90,9 @@ html {
 	font-size: 16px;
 }
 /* 第一部分结束 */
+/* 第二部分 */
 /* 介绍部分 */
 .introduce {
-	width: 100vw;
-	min-height: 100vh;
 	overflow: hidden;
 	background-image: url('../assets/images/introduce-bg@2x.png');
 	background-repeat:no-repeat;
@@ -127,6 +134,7 @@ html {
 	position: absolute;
 	bottom: -20px;
 	right: -10px;
+	z-index: 5;
 }
 @keyframes move-hand {
 	form {
@@ -136,6 +144,55 @@ html {
 		transform:translate(-10px,-20px);
 	}
 }
+/* 第二部分结束 */
+/* 分类介绍 */
+.classify-desc {
+	background: #2AE8B5;
+	overflow: hidden;
+}
+.classify-title {
+	text-align: center;
+	font-size: 50px;
+	margin: 40px 0 40px;
+}
+.classify-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.classify-item {
+	background: #fff;
+	width: 260px;
+	height: 550px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 0 20px 0 14px;
+	box-sizing: border-box;
+}
+.desc-title {
+	font-size: 40px;
+	margin: 15px 0;
+}
+.classify-item li {
+	display: flex;
+	justify-content: left;
+	margin-bottom: 20px;
+}
+.classify-item li .dot {
+	width: 10px;
+	height: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: #2AE8B5;
+	margin: 8px 5px 0 0;
+}
+.classify-item li p {
+	font-size: 18px;
+	line-height: 25px;
+}
+/* 分类介绍介绍 */
 
 /* 侧边栏按钮 */
 .hover-button {
@@ -147,7 +204,7 @@ html {
 	top: 60px;
 	right: 180px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 10;
 }
 .hover-button .button {
 	color: #fff;
@@ -160,7 +217,7 @@ html {
 	flex: 1;
 	width: 390px;
 	background: lightcoral;
-	z-index: 2;
+	z-index: 12;
 }
 .side-bar-con {
 	position: fixed;
