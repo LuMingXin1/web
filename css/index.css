@@ -138,10 +138,10 @@ html {
 }
 @keyframes move-hand {
 	form {
-		transform:translate(0,0);
+		transform: translate(0,0);
 	}
 	to {
-		transform:translate(-10px,-20px);
+		transform: translate(-10px,-20px);
 	}
 }
 /* 第二部分结束 */
@@ -170,6 +170,7 @@ html {
 	margin-bottom: 10px;
 	padding: 0 20px 0 14px;
 	box-sizing: border-box;
+	position: relative;
 }
 .desc-title {
 	font-size: 40px;
@@ -191,8 +192,16 @@ html {
 .classify-item li p {
 	font-size: 18px;
 	line-height: 25px;
+	z-index: 1;
 }
-/* 分类介绍介绍 */
+.desc-icon {
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	width: 50%;
+	z-index: 0;
+}
+/* 分类介绍结束 */
 
 /* 侧边栏按钮 */
 .hover-button {
@@ -223,6 +232,30 @@ html {
 	position: fixed;
 	width: 390px;
 	height: 100vh;
+}
+.side-bar-in {
+	animation: side-bar-in 0.6s ease-in forwards;
+}
+.side-bar-out {
+	animation: side-bar-out 0.6s ease-in forwards;
+}
+@keyframes side-bar-in {
+	0% {
+		/* transform: translateX(0); */
+		margin-left: 0;
+	}
+	100% {
+		/* transform: translateX(-390px); */
+		margin-left: -390px;
+	}
+}
+@keyframes side-bar-out {
+	0% {
+		margin-left: -390px;
+	}
+	100% {
+		margin-left: 0;
+	}
 }
 
 /* 宽度小于992 */

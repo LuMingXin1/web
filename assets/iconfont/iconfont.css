@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2588755 */
-  src: url('iconfont.woff2?t=1622700112857') format('woff2'),
-       url('iconfont.woff?t=1622700112857') format('woff'),
-       url('iconfont.ttf?t=1622700112857') format('truetype');
+  src: url('iconfont.woff2?t=1622787332200') format('woff2'),
+       url('iconfont.woff?t=1622787332200') format('woff'),
+       url('iconfont.ttf?t=1622787332200') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,90 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1vzhuanyezhidao:before {
+  content: "\e64a";
+}
+
+.icon-shuxibingshiyong:before {
+  content: "\e64b";
+}
+
+.icon-mianfeishiyong:before {
+  content: "\e646";
+}
+
+.icon-hangyeleibie:before {
+  content: "\e647";
+}
+
+.icon-chengshidiqu:before {
+  content: "\e648";
+}
+
+.icon-gongnengmokuai:before {
+  content: "\e649";
+}
+
+.icon-lanse:before {
+  content: "\e642";
+}
+
+.icon-lvse:before {
+  content: "\e643";
+}
+
+.icon-juse:before {
+  content: "\e644";
+}
+
+.icon-zise:before {
+  content: "\e645";
+}
+
+.icon-ren:before {
+  content: "\e641";
+}
+
+.icon-Colorbeifen2:before {
+  content: "\e63f";
+}
+
+.icon-Colorbeifen3:before {
+  content: "\e640";
+}
+
+.icon-dailiren:before {
+  content: "\e637";
+}
+
+.icon-shentishuju:before {
+  content: "\e638";
+}
+
+.icon-shezhi:before {
+  content: "\e639";
+}
+
+.icon-yonghukecheng:before {
+  content: "\e63a";
+}
+
+.icon-gerenzhongxin:before {
+  content: "\e63b";
+}
+
+.icon-yonghuguanli:before {
+  content: "\e63c";
+}
+
+.icon-tianjiakecheng:before {
+  content: "\e63d";
+}
+
+.icon-laoshikecheng:before {
+  content: "\e63e";
 }
 
 .icon-shijian:before {
