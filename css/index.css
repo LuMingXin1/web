@@ -85,47 +85,56 @@ html {
 /* 介绍部分 */
 .introduce {
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	overflow: hidden;
 	background-image: url('../assets/images/introduce-bg@2x.png');
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 .introduce-text {
-
+	width: 55%;
+	box-sizing: border-box;
+	padding-left: 15%;
+}
+.text-title {
+	font-size: 50px;
+	color: #000;
+	line-height: 66px;
+}
+.text-description {
+	font-size: 30px;
+	color: #999;
+	line-height: 40px;
+}
+.introduce-qr-code {
+	margin-top: 56px;
+}
+.introduce-qr-code img {
+	width: 143px;
+}
+.qr-code-desc {
+	width: 60%;
+	font-size: 18px;
 }
 .introduce-hand {
-	animation: shake-hand ease-in-out alternate 5s infinite;
+	animation: move-hand ease-in-out alternate 5s infinite;
 	width: 50%;
 	position: absolute;
 	bottom: -20px;
 	right: -10px;
 }
-@keyframes shake-hand {
+@keyframes move-hand {
 	form {
 		transform:translate(0,0);
 	}
 	to {
 		transform:translate(-10px,-20px);
 	}
-	/* 0% {
-		bottom: -4px;
-		right: -4px;
-	}
-	25% {
-		bottom: -3px;
-		right: -3px;
-	}
-  50% {
-		bottom: -2px;
-		right: -2px;
-	}
-  100% {
-		bottom: -3px;
-		right: -3px;
-	} */
 }
 
 /* 侧边栏按钮 */
