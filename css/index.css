@@ -203,9 +203,11 @@ html {
 /* 功能介绍 */
 .usage {
 	width: 100vw;
+	margin-top: 70px;
 }
 .usage-wrap {
-	padding: 60px 14% ;
+	width: 68%;
+	margin: 0 auto;
 }
 .usage-title {
 	font-size: 50px;
@@ -221,10 +223,10 @@ html {
 /* 图片 */
 .usage-content {
 	display: grid;
-	grid-template-columns: 38% 30%;
+	grid-template-columns: 58% 42%;
 	grid-template-rows: 450px 550px 200px;
-	gap: 20px 0px;
-	margin-top: 60px;
+	gap: 20px 30px;
+	margin-top: 10px;
 }
 .usage-con-p1 {
 	display: flex;
@@ -281,7 +283,60 @@ html {
 .usage-center-bar {
 	width: 1040px;
 	height: 76px;
+	position: relative;
+}
+.usage-center-content {
+	width: 1040px;
+	height: 76px;
+	margin-top: 30px;
 	background: linear-gradient(90deg, #0FCA5D 0%, #2AE8B5 34%, #2EEE7F 73%, #0EC95C 100%);
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.usage-icon {
+	line-height: 76px;
+	font-size: 24px;
+	color: #fff;
+}
+.center-bar-shadow {
+	width: 86%;
+	height: 20px;
+	position: absolute;
+	bottom: -10px;
+	left: 7%;
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+	opacity: 0.6;
+	filter: blur(13px);
+	z-index: -1;
+}
+/* 功能总结 */
+.usage-summary {
+	background: linear-gradient(180deg, #FFFFFF 0%, #97EEBB 100%);
+	text-align: center;
+	margin-top: 90px;
+	padding-top: 70px;
+	padding-bottom: 175px;
+}
+.usage-summary-title {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.usage-summary-subtitle {
+	font-size: 30px;
+	line-height: 40px;
+}
+.usage-summary-features {
+	width: 80%;
+	margin: 58px auto 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+.features-item {
+	width: 260px;
+	height: 240px;
+	background: #fff;
 	border-radius: 10px;
 }
 /* 功能介绍结束 */
