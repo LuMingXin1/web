@@ -281,8 +281,24 @@ html {
 .usage-center-bar {
 	width: 1040px;
 	height: 76px;
+	position: relative;
+}
+.usage-center-content {
+	width: 1040px;
+	height: 76px;
 	background: linear-gradient(90deg, #0FCA5D 0%, #2AE8B5 34%, #2EEE7F 73%, #0EC95C 100%);
 	border-radius: 10px;
+}
+.center-bar-shadow {
+	width: 86%;
+	height: 20px;
+	position: absolute;
+	bottom: -10px;
+	left: 7%;
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+	opacity: 0.6;
+	filter: blur(13px);
+	z-index: -1;
 }
 /* 功能介绍结束 */
 
