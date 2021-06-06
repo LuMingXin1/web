@@ -223,7 +223,7 @@ html {
 	display: grid;
 	grid-template-columns: 38% 30%;
 	grid-template-rows: 450px 550px 200px;
-	gap: 20px 0px;
+	gap: 20px 30px;
 	margin-top: 60px;
 }
 .usage-con-p1 {
@@ -288,6 +288,13 @@ html {
 	height: 76px;
 	background: linear-gradient(90deg, #0FCA5D 0%, #2AE8B5 34%, #2EEE7F 73%, #0EC95C 100%);
 	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.usage-icon {
+	line-height: 76px;
+	font-size: 24px;
+	color: #fff;
 }
 .center-bar-shadow {
 	width: 86%;
