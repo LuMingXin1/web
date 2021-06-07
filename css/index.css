@@ -461,7 +461,7 @@ html {
 	background: url('/assets/images/download-bg@2x.png') no-repeat;
 	background-size: cover;
 	position: relative;
-	min-height: 1200px;
+	min-height: 1300px;
 }
 .bottom-download-content {
 	position: absolute;
@@ -551,7 +551,15 @@ html {
 	justify-content: space-between;
 	width: 100%;
 }
-
+/* 版权信息 */
+.bottom-copyright {
+	width: 100%;
+	text-align: center;
+	font-family: PingFangSC-Regular, PingFang SC;
+	position: absolute;
+	bottom: 20px;
+	z-index: 4;
+}
 
 /* 侧边栏按钮 */
 .hover-button {

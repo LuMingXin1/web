@@ -6,8 +6,8 @@ $('#btn').on('click',function(){
 		$('.page').removeClass('side-bar-out')
 
 	}else {
-		$('.page').animate({'margin-left': '-375px'},{easing: 'linear'})
-
+		// $('.page').animate({'margin-left': '-375px'},{easing: 'linear'})
+		console.log('小屏幕');
 	}
 })
 // 隐藏侧边栏
