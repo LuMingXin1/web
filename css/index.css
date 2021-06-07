@@ -441,13 +441,17 @@ html {
 	align-items: center;
 }
 .process-item {
-	width: 60%;
+	width: 56%;
 	margin-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 }
 .process-item-img {
 	width: 470px;
+}
+.process-item:last-of-type .process-item-img {
+	width: auto;
+	height: 400px;
 }
 .process-index {
 	width: 46px;

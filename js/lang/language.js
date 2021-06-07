@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  changeLang('zh')
+  changeLang('en')
 });
 
 function changeLang(lang) {
