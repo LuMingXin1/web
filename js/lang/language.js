@@ -19,6 +19,7 @@ function changeLang(lang) {
       $('.switch').each((_,item)=>{
         $(item).attr('src',$(item).attr(lang))
       })
+      // 替换标签页名称
       document.title = $.i18n.map['title'];
     },
   });

@@ -125,6 +125,7 @@ html {
 .qr-code-desc {
 	width: 60%;
 	font-size: 18px;
+	line-height: 25px;
 }
 .introduce-hand {
 	animation: move-hand ease-in-out alternate 5s infinite;
@@ -171,8 +172,10 @@ html {
 	position: relative;
 }
 .desc-title {
-	font-size: 40px;
+	font-size: 36px;
 	margin: 15px 0;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
 }
 .classify-item li {
 	display: flex;
@@ -191,6 +194,7 @@ html {
 	font-size: 18px;
 	line-height: 25px;
 	z-index: 1;
+	font-weight: 600;
 }
 .desc-icon {
 	position: absolute;
@@ -214,11 +218,13 @@ html {
 	line-height: 66px;
 }
 .usage-title-decorate {
-	padding: 0 14px 0 10px;
+	display: inline-block;
+	text-align: center;
+	width: 120px;
 	background: #2363FF;
 	color: #fff;
-	border-top-left-radius: 36px;
-	border-end-end-radius: 36px;
+	border-top-left-radius: 46px;
+	border-end-end-radius: 46px;
 }
 /* 图片 */
 .usage-content {
@@ -326,6 +332,7 @@ html {
 .usage-summary-subtitle {
 	font-size: 30px;
 	line-height: 40px;
+	font-weight: 600;
 }
 .usage-summary-features {
 	width: 80%;
@@ -394,6 +401,7 @@ html {
 .features-item-desc {
 	margin-top: 14px;
 	font-size: 20px;
+	font-weight: 600;
 }
 .usage-summary::after {
 	content: '';
@@ -415,13 +423,17 @@ html {
 	background-size: contain;
 }
 .service-process-title {
-	margin: 60px 0 20px;
+	margin: 60px 0 30px;
 	font-size: 46px;
+	font-weight: 600;
+	font-family: PingFangSC-Semibold, PingFang SC;
 }
 .service-process-subtitle {
 	font-size: 30px;
 	color: #666;
 	margin-bottom: 60px;
+	font-weight: 600;
+	font-family: PingFangSC-Semibold, PingFang SC;
 }
 .service-process-list {
 	display: flex;
@@ -449,11 +461,14 @@ html {
 .process-desc-title {
 	font-size: 30px;
 	line-height: 42px;
+	font-weight: 600;
+	margin-bottom: 20px;
 }
 .process-desc-content {
 	max-width: 300px;
 	color: #555;
 	line-height: 25px;
+	font-weight: 600;
 }
 /* 服务流程结束 */
 /* 底部下载 */
@@ -509,11 +524,10 @@ html {
 	transform-origin: 100% 100%;
 }
 /* 心 END */
-.bottom-download-tip {
+.bottom-download-tip-con {
 	width: 426px;
-	height: 106px;
 	box-sizing: border-box;
-	padding: 14px 20px 0;
+	padding: 14px 20px 14px;
 	background: #2363FF;
 	border-radius: 0px 100px 100px 0px;
 	border: 1px solid #979797;
@@ -522,6 +536,9 @@ html {
 	line-height: 37px;
 	font-family: PingFangSC-Semibold, PingFang SC;
 	margin: 30px 0 40px;
+}
+.bottom-download-tip {
+	display: inline;
 }
 .bottom-toggle-icon {
 	display: inline-block;
