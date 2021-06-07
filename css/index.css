@@ -5,7 +5,7 @@
 html {
 	font-family: eng-num;
 }
-.fc {
+.fs {
 	width: 100vw;
 	min-height: 100vh;
 }
@@ -317,6 +317,7 @@ html {
 	margin-top: 90px;
 	padding-top: 70px;
 	padding-bottom: 175px;
+	position: relative;
 }
 .usage-summary-title {
 	font-size: 50px;
@@ -338,8 +339,81 @@ html {
 	height: 240px;
 	background: #fff;
 	border-radius: 10px;
+	position: relative;
+}
+.features-item:last-of-type::after {
+	content: '';
+	width: 144px;
+	height: 128px;
+	background: url('../assets/images/heart@2x.png');
+	background-size: contain;
+	position: absolute;
+	top: -128px;
+	left: 72px;
+}
+.features-item-icon {
+	width: 84px;
+	height: 92px;
+	margin: 20px auto 20px;
+}
+.feature-icon-inner {
+	color: #fff;
+	line-height: 86px;
+	font-size: 32px;
+}
+.features-item:nth-child(1) .features-item-icon {
+	background: url('/assets/images/green@2x.png');
+	background-size: contain;
+}
+.features-item:nth-child(2) .features-item-icon {
+	background: url('/assets/images/purple@2x.png');
+	background-size: contain;
+}
+.features-item:nth-child(3) .features-item-icon {
+	background: url('/assets/images/red@2x.png');
+	background-size: contain;
+}
+.features-item:nth-child(4) .features-item-icon {
+	background: url('/assets/images/blue@2x.png');
+	background-size: contain;
+}
+.features-item-number {
+	font-size: 36px;
+}
+.features-item:nth-child(1) .features-item-number {
+	color: #2AE8B5;
+}
+.features-item:nth-child(2) .features-item-number {
+	color: #5E2DEE;
+}
+.features-item:nth-child(3) .features-item-number {
+	color: #FF4538;
+}
+.features-item:nth-child(4) .features-item-number {
+	color: #55CEFB;
+}
+.features-item-desc {
+	margin-top: 14px;
+	font-size: 20px;
+}
+.usage-summary::after {
+	content: '';
+	width: 325px;
+	height: 234px;
+	background: url('/assets/images/usage-person@2x.png');
+	background-size: contain;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
 }
 /* 功能介绍结束 */
+
+/* 服务流程 */
+.service-process {
+	background: url('/assets/images/service-process-bg@2x.png');
+}
+/* 服务流程结束 */
+
 
 
 /* 侧边栏按钮 */
