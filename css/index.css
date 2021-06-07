@@ -344,7 +344,7 @@ html {
 	content: '';
 	width: 144px;
 	height: 128px;
-	background: url('/assets/images/heart@2x.png');
+	background: url('/assets/images/heart@2x.png') no-repeat;
 	background-size: contain;
 	position: absolute;
 	top: -128px;
@@ -361,19 +361,19 @@ html {
 	font-size: 32px;
 }
 .features-item:nth-child(1) .features-item-icon {
-	background: url('/assets/images/green@2x.png');
+	background: url('/assets/images/green@2x.png') no-repeat;
 	background-size: contain;
 }
 .features-item:nth-child(2) .features-item-icon {
-	background: url('/assets/images/purple@2x.png');
+	background: url('/assets/images/purple@2x.png') no-repeat;
 	background-size: contain;
 }
 .features-item:nth-child(3) .features-item-icon {
-	background: url('/assets/images/red@2x.png');
+	background: url('/assets/images/red@2x.png') no-repeat;
 	background-size: contain;
 }
 .features-item:nth-child(4) .features-item-icon {
-	background: url('/assets/images/blue@2x.png');
+	background: url('/assets/images/blue@2x.png') no-repeat;
 	background-size: contain;
 }
 .features-item-number {
@@ -399,7 +399,7 @@ html {
 	content: '';
 	width: 325px;
 	height: 234px;
-	background: url('/assets/images/usage-person@2x.png');
+	background: url('/assets/images/usage-person@2x.png') no-repeat;
 	background-size: contain;
 	position: absolute;
 	bottom: 20px;
@@ -411,7 +411,7 @@ html {
 .service-process {
 	overflow: hidden;
 	text-align: center;
-	background: url('/assets/images/service-process-bg@2x.png');
+	background: url('/assets/images/service-process-bg@2x.png') no-repeat;
 	background-size: contain;
 }
 .service-process-title {
@@ -446,9 +446,6 @@ html {
 	margin: 40% auto 10px;
 	color: #fff;
 }
-.item-description {
-
-}
 .process-desc-title {
 	font-size: 30px;
 	line-height: 42px;
@@ -459,7 +456,101 @@ html {
 	line-height: 25px;
 }
 /* 服务流程结束 */
-
+/* 底部下载 */
+.bottom-download {
+	background: url('/assets/images/download-bg@2x.png') no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 1200px;
+}
+.bottom-download-content {
+	position: absolute;
+	top: 450px;
+	left: 12%;
+}
+.bottom-download-title {
+	color: #fff;
+	font-size: 50px;
+	line-height: 70px;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	font-family: Arial Black;
+}
+/* 心 */
+.content-heart-con {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 50px;
+	height: 50px;
+	background: #FA3A3B;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.23);
+	border-radius: 100px 100px 100px 0px;
+	position: relative;
+}
+.content-heart {
+	position: relative;
+	top: 14px;
+	left: 10px;
+}
+.content-heart::before,
+.content-heart::after {
+	width: 15px;
+	height: 24px;
+	content: '';
+	position: absolute;
+	left: 15px;
+	background: #fff;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+.content-heart::after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+/* 心 END */
+.bottom-download-tip {
+	width: 426px;
+	height: 106px;
+	box-sizing: border-box;
+	padding: 14px 20px 0;
+	background: #2363FF;
+	border-radius: 0px 100px 100px 0px;
+	border: 1px solid #979797;
+	color: #fff;
+	font-size: 20px;
+	line-height: 37px;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	margin: 30px 0 40px;
+}
+.bottom-toggle-icon {
+	display: inline-block;
+	width: 76px;
+	height: 40px;
+	background: #FFDC30;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+	position: relative;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.toggle-circle-icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+/* 下载 */
+.bottom-download-box {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
 
 
 /* 侧边栏按钮 */
