@@ -26,7 +26,7 @@ html {
 /* 首屏 */
 .header {
 	overflow: hidden;
-	background-image: url('../assets/images/head-background@2x.png');
+	background-image: url('/assets/images/head-background@2x.png');
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -92,7 +92,7 @@ html {
 /* 介绍部分 */
 .introduce {
 	overflow: hidden;
-	background-image: url('../assets/images/introduce-bg@2x.png');
+	background-image: url('/assets/images/introduce-bg@2x.png');
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -332,7 +332,6 @@ html {
 	margin: 58px auto 0;
 	display: flex;
 	justify-content: space-between;
-
 }
 .features-item {
 	width: 260px;
@@ -345,7 +344,7 @@ html {
 	content: '';
 	width: 144px;
 	height: 128px;
-	background: url('../assets/images/heart@2x.png');
+	background: url('/assets/images/heart@2x.png');
 	background-size: contain;
 	position: absolute;
 	top: -128px;
@@ -410,7 +409,54 @@ html {
 
 /* 服务流程 */
 .service-process {
+	overflow: hidden;
+	text-align: center;
 	background: url('/assets/images/service-process-bg@2x.png');
+	background-size: contain;
+}
+.service-process-title {
+	margin: 60px 0 20px;
+	font-size: 46px;
+}
+.service-process-subtitle {
+	font-size: 30px;
+	color: #666;
+	margin-bottom: 60px;
+}
+.service-process-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.process-item {
+	width: 60%;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.process-item-img {
+	width: 470px;
+}
+.process-index {
+	width: 46px;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 46px;
+	background: #2AE8B5;
+	margin: 40% auto 10px;
+	color: #fff;
+}
+.item-description {
+
+}
+.process-desc-title {
+	font-size: 30px;
+	line-height: 42px;
+}
+.process-desc-content {
+	max-width: 300px;
+	color: #555;
+	line-height: 25px;
 }
 /* 服务流程结束 */
 
