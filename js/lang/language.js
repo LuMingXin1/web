@@ -1,7 +1,3 @@
-$(document).ready(function () {
-  changeLang('en')
-});
-
 function changeLang(lang) {
   $.i18n.properties({
     //加载资浏览器语言对应的资源文件
@@ -17,10 +13,14 @@ function changeLang(lang) {
       }
       // 替换图片
       $('.switch').each((_,item)=>{
-        $(item).attr('data-original',$(item).attr(lang))
+        $(item).attr('src',$(item).attr(lang))
       })
       // 替换标签页名称
       document.title = $.i18n.map['title'];
     },
   });
 }
+
+$(document).ready(function () {
+  changeLang('en')
+});

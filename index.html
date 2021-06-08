@@ -158,7 +158,7 @@
 				</div>
 			</section>
 			<!-- 功能介绍 -->
-			<section class="usage">
+			<section class="usage" id="usage-page">
 				<div class="usage-wrap">
 					<h2 class="usage-title" aos="zoom-in-right" data-lang="usage-title-1"></h2>
 					<h2 class="usage-title" aos="zoom-in-right" data-lang="usage-title-2"></h2>
@@ -240,7 +240,7 @@
 				</div>
 			</section>
 			<!-- 服务流程 -->
-			<section class="service-process">
+			<section class="service-process" id="service-process-page">
 				<h2 aos="zoom-in" class="service-process-title" data-lang="service-process-title"></h2>
 				<h4 aos="zoom-in" class="service-process-subtitle" data-lang="service-process-subtitle"></h4>
 				<ul class="service-process-list">
@@ -337,7 +337,7 @@
 					</div>
 					<ul class="side-bar-list">
 						<li class="side-bar-item" id="toFunctionIntroduction" data-lang="side-bar-1"></li>
-						<li class="side-bar-item" data-lang="side-bar-2"></li>
+						<li class="side-bar-item" id="toServiceProcess" data-lang="side-bar-2"></li>
 						<li class="side-bar-item" data-lang="side-bar-3"></li>
 						<li class="side-bar-item side-bar-lang">
 							<div class="lang-zh">中</div>
@@ -347,10 +347,10 @@
 					</ul>
 					<div class="side-bar-qr-con">
 						<div class="side-bar-qr qr-ios">
-							<!-- <img src="" class="img"> -->
+							<img src="assets/images/download-ios@2x.png" class="img">
 						</div>
 						<div class="side-bar-qr er-android">
-							<!-- <img src="" class="img"> -->
+							<img src="assets/images/download-android@2x.png" class="img">
 						</div>
 					</div>
 				</div>
@@ -370,7 +370,7 @@
 	<script src='js/index.js'></script>
 	<script>
 		AOS.init({ duration: 1000 });
-		$("img").lazyload({ threshold :200});
+		$("img").lazyload({ threshold :600});
 		window.onresize = function() {
 			AOS.refresh();
 		}

@@ -648,7 +648,7 @@ html {
 .side-bar-inner {
 	display: flex;
 	flex-direction: column;
-	
+
 }
 .side-bar-logo {
 	text-align: center;
@@ -677,6 +677,8 @@ html {
 }
 .side-bar-qr-con {
 	width: 100%;
+	padding: 0 5%;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
@@ -896,6 +898,9 @@ html {
 }
 /* 宽度小于768 */
 @media screen and (max-width: 768px) {
+	.header-download {
+		width: 56%;
+	}
 	.usage-content {
 		grid-template-columns: 44% 52%;
 	}
