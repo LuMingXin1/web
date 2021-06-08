@@ -245,7 +245,9 @@
 				<h4 aos="zoom-in" class="service-process-subtitle" data-lang="service-process-subtitle"></h4>
 				<ul class="service-process-list">
 					<li class="process-item" aos="fade-right">
-						<img data-original="assets/images/service-process-1@2x.png" alt="img" class="process-item-img">
+						<div class="process-item-img-con">
+							<img data-original="assets/images/service-process-1@2x.png" alt="img" class="process-item-img">
+						</div>
 						<aside class="process-desc">
 							<p class="process-index">1</p>
 							<div class="item-description">
@@ -262,10 +264,14 @@
 								<p class="process-desc-content" data-lang="process-desc-content-2"></p>
 							</div>
 						</aside>
-						<img data-original="assets/images/service-process-2@2x.png" alt="img" class="process-item-img">
+						<div class="process-item-img-con">
+							<img data-original="assets/images/service-process-2@2x.png" alt="img" class="process-item-img">
+						</div>
 					</li>
 					<li class="process-item" aos="fade-right">
-						<img data-original="assets/images/service-process-3@2x.png" alt="img" class="process-item-img">
+						<div class="process-item-img-con">
+							<img data-original="assets/images/service-process-3@2x.png" alt="img" class="process-item-img">
+						</div>
 						<aside class="process-desc">
 							<p class="process-index">3</p>
 							<div class="process-item-description">
@@ -282,8 +288,9 @@
 								<p class="process-desc-content" data-lang="process-desc-content-4"></p>
 							</div>
 						</aside>
-						
-						<img data-original="assets/images/service-process-4@2x.png" alt="img" class="process-item-img">
+						<div class="process-item-img-con">
+							<img data-original="assets/images/service-process-4@2x.png" alt="img" class="process-item-img">
+						</div>
 					</li>
 				</ul>
 			</section>
@@ -339,6 +346,9 @@
 	<script>
 		AOS.init({ duration: 1000 });
 		$("img").lazyload({ threshold :200});
+		window.onresize = function() {
+			AOS.refresh();
+		}
 	</script>
 </body>
 </html>

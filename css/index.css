@@ -465,9 +465,12 @@ html {
 	justify-content: space-between;
 }
 .process-item-img {
-	width: 470px;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
-.process-item:last-of-type .process-item-img {
+.process-item:last-of-type .process-item-img-con {
 	width: auto;
 	height: 400px;
 }
@@ -622,13 +625,13 @@ html {
 /* 侧边栏 */
 .side-bar {
 	flex: 1;
-	width: 390px;
+	width: 375px;
 	background: lightcoral;
 	z-index: 12;
 }
 .side-bar-con {
 	position: fixed;
-	width: 390px;
+	width: 375px;
 	height: 100vh;
 }
 .side-bar-in {
@@ -639,17 +642,15 @@ html {
 }
 @keyframes side-bar-in {
 	0% {
-		/* transform: translateX(0); */
 		margin-left: 0;
 	}
 	100% {
-		/* transform: translateX(-390px); */
-		margin-left: -390px;
+		margin-left: -375px;
 	}
 }
 @keyframes side-bar-out {
 	0% {
-		margin-left: -390px;
+		margin-left: -375px;
 	}
 	100% {
 		margin-left: 0;
@@ -688,7 +689,7 @@ html {
 	.hover-button {
 		right: 40px;
 	}
-	.process-item-img {
+	.process-item-img-con {
 		width: 400px;
 	}
 }
@@ -739,7 +740,7 @@ html {
 		height: 220px;
 	}
 	/* 服务流程 */
-	.process-item-img {
+	.process-item-img-con {
 		width: 360px;
 	}
 }
@@ -778,7 +779,7 @@ html {
 		width: 690px;
 	}
 	/* 服务流程 */
-	.process-item-img {
+	.process-item-img-con {
 		width: 300px;
 	}
 }
@@ -827,7 +828,7 @@ html {
 	.usage-summary-subtitle {
 		font-size: 25px;
 	}
-	.process-item-img {
+	.process-item-img-con {
 		height: 280px;
 	}
 	.process-index {
@@ -980,11 +981,13 @@ html {
 	.process-item {
 		width: 96vw;
 	}
-	.process-item-img {
+	.process-item-img-con {
 		width: 180px;
 		height: auto;
+		padding-top: 40px;
+		box-sizing: border-box;
 	}
-	.process-item:last-of-type .process-item-img {
+	.process-item:last-of-type .process-item-img-con {
 		width: 180px;
 		height: 300px;
 	}
