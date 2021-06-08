@@ -328,7 +328,32 @@
 		<!-- 侧边栏 -->
 		<div class="side-bar">
 			<div class="side-bar-con">
-				<div class="close">close</div>
+				<div class="side-bar-close">
+					<img class="img" src="assets/images/close@2x.png">
+				</div>
+				<div class="side-bar-inner">
+					<div class="side-bar-logo">
+						<img class="img" src="assets/images/logo@2x.png" alt="">
+					</div>
+					<ul class="side-bar-list">
+						<li class="side-bar-item" id="toFunctionIntroduction" data-lang="side-bar-1"></li>
+						<li class="side-bar-item" data-lang="side-bar-2"></li>
+						<li class="side-bar-item" data-lang="side-bar-3"></li>
+						<li class="side-bar-item side-bar-lang">
+							<div class="lang-zh">中</div>
+							<div class="separate">|</div>
+							<div class="lang-en">EN</div>
+						</li>
+					</ul>
+					<div class="side-bar-qr-con">
+						<div class="side-bar-qr qr-ios">
+							<!-- <img src="" class="img"> -->
+						</div>
+						<div class="side-bar-qr er-android">
+							<!-- <img src="" class="img"> -->
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -341,8 +366,8 @@
 	<script src='js/lazyload/jquery.lazyload.min.js'></script>
 	<script src='js/lang/jquery.i18n.properties.min.js'></script>
 	<script src='js//aos/aos.js'></script>
-	<script src='js/index.js'></script>
 	<script src='js/lang/language.js'></script>
+	<script src='js/index.js'></script>
 	<script>
 		AOS.init({ duration: 1000 });
 		$("img").lazyload({ threshold :200});
