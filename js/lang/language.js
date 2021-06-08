@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  changeLang('en')
+  changeLang('zh')
 });
 
 function changeLang(lang) {
@@ -17,7 +17,7 @@ function changeLang(lang) {
       }
       // 替换图片
       $('.switch').each((_,item)=>{
-        $(item).attr('src',$(item).attr(lang))
+        $(item).attr('data-original',$(item).attr(lang))
       })
       // 替换标签页名称
       document.title = $.i18n.map['title'];
