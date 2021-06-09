@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="assets/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/side-bar.css">
 	<link rel="stylesheet" href="css/index.css">
 	<title>Document</title>
 </head>
@@ -369,6 +371,10 @@
 	<script src='js/lang/language.js'></script>
 	<script src='js/index.js'></script>
 	<script>
+		$(document).ready(function () {
+			const lang = getLang()
+			changeLang(lang, 'index-title')
+		});
 		AOS.init({ duration: 1000 });
 		$("img").lazyload({ threshold :600});
 		window.onresize = function() {

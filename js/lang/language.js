@@ -1,4 +1,13 @@
-function changeLang(lang) {
+function getLang() {
+  let lang = 'en'
+  if(window.localStorage.getItem('lang')) {
+    lang = window.localStorage.getItem('lang')
+  } else {
+    window.localStorage.setItem('lang', 'en')
+  }
+  return lang
+}
+function changeLang(lang, title) {
   $.i18n.properties({
     //加载资浏览器语言对应的资源文件
     name: 'strings', //资源文件名称
@@ -16,11 +25,7 @@ function changeLang(lang) {
         $(item).attr('src',$(item).attr(lang))
       })
       // 替换标签页名称
-      document.title = $.i18n.map['title'];
+      document.title = $.i18n.map[title];
     },
   });
 }
-
-$(document).ready(function () {
-  changeLang('en')
-});

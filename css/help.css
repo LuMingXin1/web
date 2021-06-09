@@ -1,0 +1,92 @@
+.help-page {
+	display: flex;
+}
+.help-con {
+	display: flex;
+}
+/* 侧边栏 */
+.help-left-outer {
+	width: 300px;
+	height: 100%;
+	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.13);
+	z-index: 2;
+}
+.help-left-side-bar {
+	width: 300px;
+	height: 60vh;
+	padding-top: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 22px;
+	position: fixed;
+}
+.help-option {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	cursor: pointer;
+}
+.active {
+	color: #2AE8B5;
+}
+/* 帮助正文 */
+.help-right-content {
+	flex: 1;
+	background: #F5F5F5;
+	z-index: 1;
+}
+.help-content .content-img-box > img {
+	width: 320px;
+}
+.hide {
+	display: none;
+}
+
+/* 大于480 */
+@media screen and (min-width: 480px) {
+	.help-content .title {
+		font-size: 30px;
+	}
+}
+/* 小于480 */
+@media screen and (max-width: 480px) {
+	.hover-button {
+		width: 30px;
+		height: 30px;
+		top: 10px;
+		right: 10px;
+	}
+	.hover-button .button {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.help-con {
+		flex-direction: column;
+	}
+	/* 侧边栏 */
+	.help-left-outer,
+	.help-left-side-bar {
+		width: 100vw;
+		height: 240px;
+	}
+	.help-left-side-bar {
+		justify-content: space-around;
+		padding-top: 0;
+		position: relative;
+	}
+	.help-option {
+		font-size: 22px;
+		line-height: 22px;
+	}
+	/* 正文 */
+	.subtitle {
+		text-align: center;
+	}
+	.content-img-box {
+		min-width: 96%;
+	}
+}

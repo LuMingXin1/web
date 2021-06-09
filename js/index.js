@@ -16,10 +16,12 @@ $('.side-bar-close').on('click',closeSidebar)
 
 // 更改语言
 $('.lang-zh').on('click',function(){
-	changeLang('zh')
+	window.localStorage.setItem('lang', 'zh')
+	changeLang('zh', 'index-title')
 })
 $('.lang-en').on('click',function(){
-	changeLang('en')
+	window.localStorage.setItem('lang', 'en')
+	changeLang('en', 'index-title')
 })
 // 跳转功能介绍
 $('#toFunctionIntroduction').on('click',function(){

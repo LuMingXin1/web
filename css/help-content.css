@@ -1,0 +1,60 @@
+img{
+  vertical-align: middle;
+}
+.bodydiv{
+  width: 90%;
+  margin: 0 auto;
+}
+.title{
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 25px;
+}
+.subtitle{
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 22px;
+}
+.green-color{
+  color: #2AE8B5;
+}
+.content-img-box{
+  width: auto;
+  max-width: 85%;
+  margin: 8px auto 14px;
+}
+.content-img{
+  display: block;
+  width: 100%;
+}
+.adjoin-img{
+  margin-top: 2px;
+}
+.add-icon{
+  display: inline-block;
+  line-height: 22px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 4px;
+}
+.teacher-btn-icon{
+  width: 60px;
+  height: 34px;
+  margin: 10px 0px;
+}
+.teacher-add-icon{
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px;
+}
+.content-red-text{
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: #F35353;
+  line-height: 14px;
+}
