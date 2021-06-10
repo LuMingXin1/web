@@ -1,12 +1,7 @@
 function getLang() {
-  let lang = 'en'
-  if(window.localStorage.getItem('lang')) {
-    lang = window.localStorage.getItem('lang')
-  } else {
-    window.localStorage.setItem('lang', 'en')
-  }
-  return lang
+  return window.localStorage.getItem('lang') || 'zh'
 }
+
 function changeLang(lang, title) {
   $.i18n.properties({
     //加载资浏览器语言对应的资源文件
@@ -18,7 +13,7 @@ function changeLang(lang, title) {
     callback: function () {
       //加载成功后设置显示内容  替换文本
       for (let key in $.i18n.map) {
-        $('[data-lang="' + key + '"]').text($.i18n.map[key]);
+        $(`[data-lang=${key}]`).text($.i18n.map[key]);
       }
       // 替换图片
       $('.switch').each((_,item)=>{

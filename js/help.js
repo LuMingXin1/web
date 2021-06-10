@@ -9,6 +9,10 @@ function closeSidebar() {
 	$('.help-page').addClass('side-bar-out')
 	$('.help-page').removeClass('side-bar-in')
 }
+// 滑动效果
+function slide(locationID) {
+	$("html,body").animate({scrollTop:$('#'+locationID).offset().top},800);
+}
 
 // 弹出侧边栏
 $('#btn').on('click',openSidebar)
@@ -36,13 +40,10 @@ $('.lang-en').on('click',function(){
 // 点击切换
 $('.help-left-side-bar').on('click',function(e) {
 	if(e.target.tagName !== 'LI') return
-	const index = $(e.target).attr('index')
+	// 设置高亮
 	$('.help-option').removeClass('active')
 	$(e.target).addClass('active')
-	if(index > -1) {
-		$('.help-content').addClass('hide')
-		$(`.help-content:eq(${index})`).removeClass('hide')
-	} else {
-		$('.help-content').removeClass('hide')
-	}
+	// 显示点击的帮助项
+	const location = $(e.target).attr('location')
+	slide(location)
 })

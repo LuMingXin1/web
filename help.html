@@ -19,19 +19,19 @@
 			<!-- 左侧边栏 -->
 			<div class="help-left-outer">
 				<ul class="help-left-side-bar">
-					<li class="help-option active" index="-1" data-lang="help-title-1">All</li>
-					<li class="help-option" index="0" data-lang="help-title-2">Location settings</li>
-					<li class="help-option" index="1" data-lang="help-title-3">Coin type</li>
-					<li class="help-option" index="2" data-lang="help-title-4">Package settings</li>
-					<li class="help-option" index="3" data-lang="help-title-5">Course type</li>
-					<li class="help-option" index="4" data-lang="help-title-6">Teacher management</li>
-					<li class="help-option" index="5" data-lang="help-title-7">Add course</li>
+					<li class="help-option active" location="location-settings" data-lang="help-title-1"></li>
+					<li class="help-option" location="location-settings" data-lang="help-title-2"></li>
+					<li class="help-option" location="coin-type" data-lang="help-title-3"></li>
+					<li class="help-option" location="package-setting" data-lang="help-title-4"></li>
+					<li class="help-option" location="course-type" data-lang="help-title-5"></li>
+					<li class="help-option" location="teacher-management" data-lang="help-title-6"></li>
+					<li class="help-option" location="add-course" data-lang="help-title-7"></li>
 				</ul>
 			</div>
 			<!-- 正文部分 -->
 			<div class="help-right-content">
 				<ul>
-					<li class="help-content bodydiv">
+					<li class="help-content bodydiv" id="location-settings">
 						<div class="title"  data-lang="help-title-2">位置设置</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加位置】</span>
@@ -52,7 +52,7 @@
 							<img data-original="./assets/images/location-03@2x.png" class="content-img" alt="">
 						</div>
 					</li>
-					<li class="help-content bodydiv">
+					<li class="help-content bodydiv" id="coin-type">
 						<div class="title"  data-lang="help-title-3">硬币设置</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加硬币类型】</span>
@@ -73,7 +73,7 @@
 							<img data-original="./assets/images/coin-set-03@2x.png" class="content-img" alt="">
 						</div>
 					</li>
-					<li class="help-content bodydiv">
+					<li class="help-content bodydiv" id="package-setting">
 						<div class="title"  data-lang="help-title-4">套餐设置</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加套餐】</span>
@@ -102,7 +102,7 @@
 							<img data-original="./assets/images/combo-05@2x.png" class="content-img" alt="">
 						</div>
 					</li>
-					<li class="help-content bodydiv">
+					<li class="help-content bodydiv" id="course-type">
 						<div class="title"  data-lang="help-title-5">课程类型</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加课程类型】</span>
@@ -124,7 +124,7 @@
 							<img data-original="./assets/images/classify-03@2x.png" class="content-img" alt="">
 						</div>
 					</li>
-					<li class="help-content bodydiv">
+					<li class="help-content bodydiv" id="teacher-management">
 						<div class="title"  data-lang="help-title-6">老师管理</div>
 						<div class="subtitle">
 							1.点击<img class="teacher-btn-icon" data-original="./assets/images/teacher-btn-icon@2x.png" alt=""> 自己成为老师
@@ -145,7 +145,7 @@
 							<img data-original="./assets/images/teacher-02@2x.png" class="content-img" alt="">
 						</div>
 					</li>
-					<li class="help-content bodydiv">
+					<li class="help-content bodydiv" id="add-course">
 						<div class="title"  data-lang="help-title-7">添加课程</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加课程】</span>
@@ -215,7 +215,10 @@
 			const lang = getLang()
 			changeLang(lang, 'help-title')
 		});
-		$("img").lazyload({ threshold: 200 });
+		$("img").lazyload({
+			effect: "fadeIn",
+			threshold: 200
+		});
 	</script>
 </body>
 </html>

@@ -9,14 +9,9 @@ function closeSidebar() {
 	$('.page').addClass('side-bar-out')
 	$('.page').removeClass('side-bar-in')
 }
-// function toFunctionIntroduction() {
-// 	$("html,body").animate({scrollTop:$("#usage-page").offset().top},1000)
-// }
-// function toServiceProcess() {
-// 	$("html,body").animate({scrollTop:$("#service-process-page").offset().top},1000);
-// }
+// 滑动效果
 function slide(locationID) {
-	$("html,body").animate({scrollTop:$(locationID).offset().top},1000);
+	$("html,body").animate({scrollTop:$('#'+locationID).offset().top},1000);
 }
 
 // 弹出侧边栏
@@ -36,12 +31,12 @@ $('.lang-en').on('click',function(){
 // 跳转功能介绍
 $('#toFunctionIntroduction').on('click',function(){
 	$('body').width() <= 375 &&	closeSidebar()
-	slide("#usage-page")
+	slide("usage-page")
 })
 // 跳转服务流程
 $('#toServiceProcess').on('click',function(){
 	$('body').width() <= 375 &&	closeSidebar()
-	slide("#service-process-page")
+	slide("service-process-page")
 })
 // 跳转帮助
 $('#toHelp').on('click',function(){
