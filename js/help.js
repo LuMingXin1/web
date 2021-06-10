@@ -26,11 +26,11 @@ $('#toServiceProcess').on('click',function(){
 // 更改语言
 $('.lang-zh').on('click',function(){
 	window.localStorage.setItem('lang', 'zh')
-	changeLang('zh', 'index-title')
+	changeLang('zh', 'help-title')
 })
 $('.lang-en').on('click',function(){
 	window.localStorage.setItem('lang', 'en')
-	changeLang('en', 'index-title')
+	changeLang('en', 'help-title')
 })
 
 // 点击切换
