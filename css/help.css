@@ -51,6 +51,16 @@
 	.help-content .title {
 		font-size: 30px;
 	}
+	.teacher-btn-icon {
+		width: 92px;
+		height: 52px;
+	}
+}
+/* 小于1366 */
+@media screen and (max-width: 1366px) {
+	.hover-button {
+		right: 10px;
+	}
 }
 /* 小于480 */
 @media screen and (max-width: 480px) {

@@ -13,20 +13,19 @@
 	<title>Document</title>
 </head>
 <body>
-
 	<div class="help-page">
 		<!-- 内容区 -->
 		<div class="help-con fs">
-			<!-- 侧边栏 -->
+			<!-- 左侧边栏 -->
 			<div class="help-left-outer">
 				<ul class="help-left-side-bar">
-					<li class="help-option active" index="-1">All</li>
-					<li class="help-option" index="0">Location settings</li>
-					<li class="help-option" index="1">Coin type</li>
-					<li class="help-option" index="2">Package settings</li>
-					<li class="help-option" index="3">Course type</li>
-					<li class="help-option" index="4">Teacher management</li>
-					<li class="help-option" index="5">Add course</li>
+					<li class="help-option active" index="-1" data-lang="help-sidebar-title-1">All</li>
+					<li class="help-option" index="0" data-lang="help-sidebar-title-2">Location settings</li>
+					<li class="help-option" index="1" data-lang="help-sidebar-title-3">Coin type</li>
+					<li class="help-option" index="2" data-lang="help-sidebar-title-4">Package settings</li>
+					<li class="help-option" index="3" data-lang="help-sidebar-title-5">Course type</li>
+					<li class="help-option" index="4" data-lang="help-sidebar-title-6">Teacher management</li>
+					<li class="help-option" index="5" data-lang="help-sidebar-title-7">Add course</li>
 				</ul>
 			</div>
 			<!-- 正文部分 -->
@@ -206,7 +205,6 @@
 			<span class="iconfont button icon-caidanbaise"></span>
 		</div>
 	</div>
-
 	<script src='js/jquery-2.1.1.min.js'></script>
 	<script src='js/lazyload/jquery.lazyload.min.js'></script>
 	<script src='js/lang/jquery.i18n.properties.min.js'></script>
@@ -214,7 +212,8 @@
 	<script src='js/help.js'></script>
 	<script>
 		$(document).ready(function () {
-			changeLang('en', 'help-title')
+			const lang = getLang()
+			changeLang(lang, 'help-title')
 		});
 		$("img").lazyload({ threshold :600});
 	</script>

@@ -15,6 +15,16 @@ $('#btn').on('click',openSidebar)
 // 隐藏侧边栏
 $('.side-bar-close').on('click',closeSidebar)
 
+// 更改语言
+$('.lang-zh').on('click',function(){
+	window.localStorage.setItem('lang', 'zh')
+	changeLang('zh', 'index-title')
+})
+$('.lang-en').on('click',function(){
+	window.localStorage.setItem('lang', 'en')
+	changeLang('en', 'index-title')
+})
+
 // 点击切换
 $('.help-left-side-bar').on('click',function(e) {
 	if(e.target.tagName !== 'LI') return
