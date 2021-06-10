@@ -19,20 +19,20 @@
 			<!-- 左侧边栏 -->
 			<div class="help-left-outer">
 				<ul class="help-left-side-bar">
-					<li class="help-option active" index="-1" data-lang="help-sidebar-title-1">All</li>
-					<li class="help-option" index="0" data-lang="help-sidebar-title-2">Location settings</li>
-					<li class="help-option" index="1" data-lang="help-sidebar-title-3">Coin type</li>
-					<li class="help-option" index="2" data-lang="help-sidebar-title-4">Package settings</li>
-					<li class="help-option" index="3" data-lang="help-sidebar-title-5">Course type</li>
-					<li class="help-option" index="4" data-lang="help-sidebar-title-6">Teacher management</li>
-					<li class="help-option" index="5" data-lang="help-sidebar-title-7">Add course</li>
+					<li class="help-option active" index="-1" data-lang="help-title-1">All</li>
+					<li class="help-option" index="0" data-lang="help-title-2">Location settings</li>
+					<li class="help-option" index="1" data-lang="help-title-3">Coin type</li>
+					<li class="help-option" index="2" data-lang="help-title-4">Package settings</li>
+					<li class="help-option" index="3" data-lang="help-title-5">Course type</li>
+					<li class="help-option" index="4" data-lang="help-title-6">Teacher management</li>
+					<li class="help-option" index="5" data-lang="help-title-7">Add course</li>
 				</ul>
 			</div>
 			<!-- 正文部分 -->
 			<div class="help-right-content">
 				<ul>
 					<li class="help-content bodydiv">
-						<div class="title">位置设置</div>
+						<div class="title"  data-lang="help-title-2">位置设置</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加位置】</span>
 						</div>
@@ -53,7 +53,7 @@
 						</div>
 					</li>
 					<li class="help-content bodydiv">
-						<div class="title">硬币设置</div>
+						<div class="title"  data-lang="help-title-3">硬币设置</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加硬币类型】</span>
 						</div>
@@ -74,7 +74,7 @@
 						</div>
 					</li>
 					<li class="help-content bodydiv">
-						<div class="title">套餐设置</div>
+						<div class="title"  data-lang="help-title-4">套餐设置</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加套餐】</span>
 						</div>
@@ -103,7 +103,7 @@
 						</div>
 					</li>
 					<li class="help-content bodydiv">
-						<div class="title">课程类型</div>
+						<div class="title"  data-lang="help-title-5">课程类型</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加课程类型】</span>
 						</div>
@@ -125,7 +125,7 @@
 						</div>
 					</li>
 					<li class="help-content bodydiv">
-						<div class="title">老师管理</div>
+						<div class="title"  data-lang="help-title-6">老师管理</div>
 						<div class="subtitle">
 							1.点击<img class="teacher-btn-icon" src="./assets/images/teacher-btn-icon@2x.png" alt=""> 自己成为老师
 						</div>
@@ -146,7 +146,7 @@
 						</div>
 					</li>
 					<li class="help-content bodydiv">
-						<div class="title">添加课程</div>
+						<div class="title"  data-lang="help-title-7">添加课程</div>
 						<div class="subtitle">
 							1.点击<span class="green-color">【添加课程】</span>
 						</div>
@@ -215,7 +215,7 @@
 			const lang = getLang()
 			changeLang(lang, 'help-title')
 		});
-		$("img").lazyload({ threshold :600});
+		$("img").lazyload({ threshold: 200 });
 	</script>
 </body>
 </html>

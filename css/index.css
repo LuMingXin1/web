@@ -114,7 +114,7 @@
 	line-height: 25px;
 }
 .introduce-hand {
-	animation: move-hand ease-in-out alternate 5s infinite;
+	animation: move-hand ease-in-out alternate 4s infinite;
 	width: 50%;
 	position: absolute;
 	bottom: -20px;
