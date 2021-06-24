@@ -580,11 +580,18 @@
 /* 版权信息 */
 .bottom-copyright {
 	width: 100%;
-	text-align: center;
 	font-family: PingFangSC-Regular, PingFang SC;
 	position: absolute;
-	bottom: 20px;
+	bottom: 25px;
 	z-index: 4;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.bottom-copyright-target {
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
 }
 
 /* 宽度小于1330 */
