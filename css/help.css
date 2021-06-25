@@ -41,6 +41,9 @@
 	position: relative;
 	padding-bottom: 30px;
 }
+.help-content {
+	margin-bottom: 80px;
+}
 .help-content .content-img-box > img {
 	width: 320px;
 }
@@ -99,6 +102,10 @@
 	.help-con {
 		flex-direction: column;
 	}
+	.help-content {
+		margin-bottom: 40px;
+	}
+
 	/* 侧边栏 */
 	.help-left-outer,
 	.help-left-side-bar {

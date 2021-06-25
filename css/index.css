@@ -453,8 +453,12 @@
 	max-width: 100%;
 	max-height: 100%;
 }
+.process-item-img-con {
+	max-width: 479px;
+}
 .process-item:last-of-type .process-item-img-con {
 	width: auto;
+	max-width: 479px;
 	height: 400px;
 }
 .process-index {
@@ -463,8 +467,14 @@
 	line-height: 46px;
 	border-radius: 46px;
 	background: #2AE8B5;
-	margin: 40% auto 10px;
+	margin: 0 auto 10px;
 	color: #fff;
+}
+.process-desc {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 .process-desc-title {
 	font-size: 30px;
@@ -473,7 +483,7 @@
 	margin-bottom: 20px;
 }
 .process-desc-content {
-	max-width: 300px;
+	/* max-width: 300px; */
 	color: #555;
 	line-height: 25px;
 	font-weight: 600;
@@ -481,15 +491,22 @@
 /* 服务流程结束 */
 /* 底部下载 */
 .bottom-download {
-	background: url('/assets/images/download-bg@2x.png') no-repeat;
-	background-size: cover;
-	background-position: center;
+	/* background: url('/assets/images/download-bg@2x.png') no-repeat; */
+	/* background-size: cover; */
+	/* background-size: contain; */
+	/* background-position: center; */
+	/* background-position: right; */
+	/* min-height: 937px; */
 	position: relative;
-	min-height: 1300px;
+	/* min-height: 1300px; */
+}
+.bottom-download-bg {
+	width: 100vw;
+	font-size: 0;
 }
 .bottom-download-content {
 	position: absolute;
-	top: 450px;
+	top: 28%;
 	left: 12%;
 }
 .bottom-download-title {
@@ -606,7 +623,7 @@
 	}
 	/* 功能介绍 */
 	.phone-img {
-		display: none !important;
+		/* display: none !important; */
 	}
 	.coins-img {
 		width: 280px;
@@ -783,12 +800,17 @@
 	}
 }
 /* 宽度小于768 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 	.header-download {
 		width: 56%;
 	}
 	.usage-content {
 		grid-template-columns: 44% 52%;
+	}
+	.bottom-download-content {
+		transform: scale(0.6, 0.6) !important;
+		left: -22px;
+		top: -20px;
 	}
 }
 /* 宽度小于480 */
@@ -826,7 +848,8 @@
 		margin-top: 20px;
 	}
 	.introduce-hand {
-		display: none;
+		/* display: none; */
+		width: 68%;
 	}
 	.introduce-qr-code {
 		margin-top: 40px;
@@ -926,6 +949,7 @@
 		width: 96vw;
 	}
 	.process-item-img-con {
+		flex: 1;
 		width: 180px;
 		height: auto;
 		padding-top: 40px;
@@ -934,6 +958,10 @@
 	.process-item:last-of-type .process-item-img-con {
 		width: 180px;
 		height: 300px;
+	}
+	.process-desc {
+		flex: 1;
+		width: 300px;
 	}
 	.process-desc-title {
 		font-size: 18px;
@@ -947,13 +975,32 @@
 	/* bottom download */
 	.bottom-download {
 		min-height: 100vh;
+		background: url('../assets/images/mob-download-bg@2x.png') no-repeat;
+		/* background-position: center -60px; */
+		background-position: bottom;
+		background-size: cover;
+	}
+	.bottom-download-bg {
+		display: none;
+	}
+	.bottom-download-box {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.bottom-download-content {
 		transform: scale(0.6, 0.6) !important;
-		left: 0;
-		top: 100px;
+		left: -22px;
+		top: -20px;
 	}
 	.bottom-copyright {
 		font-size: 12px;
+		bottom: 5px;
+	}
+	.coins-img {
+		width: 180px;
+	}
+	.phone-img {
+
 	}
 }

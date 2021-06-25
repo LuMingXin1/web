@@ -52,6 +52,19 @@
 	font-weight: bold;
 	cursor: pointer;
 }
+.side-bar-item:hover {
+	color: #2AE8B5;
+}
+.to-help:hover {
+	color: #2AE8B5;
+}
+.side-bar-lang:hover {
+	color: #000;
+}
+.lang-zh:hover,
+.lang-en:hover {
+	color: #2AE8B5;
+}
 .side-bar-lang {
 	width: 100px;
 	margin: 0 auto;
@@ -62,6 +75,7 @@
 .lang-en {
 	flex: 1;
 	cursor: pointer;
+	font-weight: bold;
 }
 .side-bar-qr-con {
 	width: 100%;
