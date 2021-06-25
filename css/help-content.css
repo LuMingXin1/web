@@ -22,10 +22,17 @@ img{
 .green-color{
   color: #2AE8B5;
 }
-.content-img-box{
+/* .content-img-box{
   width: auto;
   max-width: 85%;
   margin: 8px auto 14px;
+} */
+.content-img-box {
+  width: auto;
+  /* max-width: 85%; */
+  max-width: 320px;
+  margin: 8px 0px 14px;
+  text-align: center;
 }
 .content-img{
   display: block;
@@ -52,7 +59,7 @@ img{
   margin: 10px 0px;
 }
 .content-red-text{
-  text-align: center;
+  /* text-align: center; */
   font-size: 10px;
   font-weight: 400;
   color: #F35353;

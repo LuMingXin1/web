@@ -1,4 +1,4 @@
-const baseUrl = 'http://127.0.0.1:5500'
+// const baseUrl = 'http://127.0.0.1:5500'
 // 弹出侧边栏
 function openSidebar() {
 	$('.page').addClass('side-bar-in')
@@ -39,9 +39,9 @@ $('#toServiceProcess').on('click',function(){
 	slide("service-process-page")
 })
 // 跳转帮助
-$('#toHelp').on('click',function(){
-	window.location = `${baseUrl}/help.html`
-})
+// $('#toHelp').on('click',function(){
+// 	window.location = `${baseUrl}/help.html`
+// })
 // 侧边栏滚动穿透
 $('.side-bar')[0].addEventListener('touchmove', function(e) {
 	e.preventDefault();

@@ -6,7 +6,7 @@ function changeLang(lang, title) {
   $.i18n.properties({
     //加载资浏览器语言对应的资源文件
     name: 'strings', //资源文件名称
-    path: 'Languages/', //资源文件路径
+    path: 'languages/', //资源文件路径
     language: lang,
     cache: false,
     mode: 'map', //用Map的方式使用资源文件中的值

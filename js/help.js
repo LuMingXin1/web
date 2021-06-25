@@ -1,4 +1,4 @@
-const baseUrl = 'http://127.0.0.1:5500'
+// const baseUrl = 'http://127.0.0.1:5500'
 // 弹出侧边栏
 function openSidebar() {
 	$('.help-page').addClass('side-bar-in')
@@ -20,13 +20,13 @@ $('#btn').on('click',openSidebar)
 $('.side-bar-close').on('click',closeSidebar)
 
 // 跳转功能介绍
-$('#toFunctionIntroduction').on('click',function(){
-	window.location = `${baseUrl}/index.html#usage-page`
-})
+// $('#toFunctionIntroduction').on('click',function(){
+// 	window.location = `${baseUrl}/index.html#usage-page`
+// })
 // 跳转服务流程
-$('#toServiceProcess').on('click',function(){
-	window.location = `${baseUrl}/index.html#service-process-page`
-})
+// $('#toServiceProcess').on('click',function(){
+// 	window.location = `${baseUrl}/index.html#service-process-page`
+// })
 // 更改语言
 $('.lang-zh').on('click',function(){
 	window.localStorage.setItem('lang', 'zh')
